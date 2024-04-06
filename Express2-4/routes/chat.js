@@ -49,7 +49,7 @@ router.get("/messages", (req, res, next) => {
         </div>
         <script>
             document.getElementById("messageForm").addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent default form submission
+                event.preventDefault();
                 const username = localStorage.getItem('username');
                 document.getElementById('hiddenUsername').value = username;
                 this.submit();
